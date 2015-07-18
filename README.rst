@@ -216,8 +216,8 @@ DNS lookup
   local ``hosts`` file (whose location `varies by OS`_) before trying to
   resolve the hostname through DNS.
 * If ``gethostbyname`` does not have it cached nor can find it in the ``hosts``
-  file then it makes a request to the DNS server configured in the network
-  stack. This is typically the local router or the ISP's caching DNS server:
+    file then it makes a request to the DNS server configured in the network
+    stack. This is typically the local router or the ISP's caching DNS server.
    * If the DNS server is on the same subnet the network library follows the
      ``ARP process`` below for the DNS server.
    * If the DNS server is on a different subnet, the network library follows
